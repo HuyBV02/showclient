@@ -69,7 +69,7 @@ export default function Home({ dataCr, dataLast }) {
                     </Tabs>
                 </Box>
                 <CustomTabPanel value={value} index={0}>
-                    <Map dataLast={dataLast} />
+                    {/* <Map dataLast={dataLast} /> */}
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
                     <ChartComponent dataCr={dataCr} />
