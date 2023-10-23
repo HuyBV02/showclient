@@ -7,178 +7,99 @@ import {
     Typography,
     Button,
 } from '@material-tailwind/react';
+
 const News = () => {
     return (
-        <div className="h-[50vh] border text-black bg-slate-100 mb-[50px]">
+        <div className="h-[50vh] text-black bg-slate-50 mb-[50px]">
             <div className="flex justify-around ml-[4%] mr-[4%] h-[100%]">
-                <div className="border w-[30%] mt-[3%] mb-[3%] flex">
-
-
-                    <div className="w-[40%] relative max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
-                        <a href="#">
-                            <img
-                                className="p-8 rounded-t-lg"
-                                src="/docs/images/products/apple-watch.png"
-                                alt="product image"
-                            />
-                        </a>
-                        <div className="px-5 pb-5">
-                            <a href="#">
-                                <h5 className="text-xl font-semibold tracking-tight text-gray-900 ">
-                                    Apple Watch Series 7 GPS, Aluminium Case,
-                                    Starlight Sport
-                                </h5>
-                            </a>
-                            <div className="flex items-center mt-2.5 mb-5">
-                                <svg
-                                    className="w-4 h-4 text-yellow-300 mr-1"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 22 20"
-                                >
-                                    <path
-                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 
-                                    1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 
-                                    3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 
-                                    0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                                    />
-                                </svg>
-                                <svg
-                                    className="w-4 h-4 text-yellow-300 mr-1"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 22 20"
-                                >
-                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                </svg>
-                                <svg
-                                    className="w-4 h-4 text-yellow-300 mr-1"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 22 20"
-                                >
-                                    <path
-                                        d="M20.924 7.625a1.523 1.523 0 0 
-                                    0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 
-                                    0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 
-                                    0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 
-                                    2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 
-                                    2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                                    />
-                                </svg>
-                                <svg
-                                    className="w-4 h-4 text-yellow-300 mr-1"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 22 20"
-                                >
-                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                </svg>
-                                <svg
-                                    className="w-4 h-4 text-gray-200 dark:text-gray-600"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="currentColor"
-                                    viewBox="0 0 22 20"
-                                >
-                                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                </svg>
-                                <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                                    5.0
-                                </span>
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                                    $599
-                                </span>
-                                <a
-                                    href="#"
-                                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                >
-                                    Add to cart
-                                </a>
-                            </div>
-                        </div>
+                <div className="mt-[3%] mb-[3%] w-[45%] flex-row justify-around h-[100%]">
+                    <div className="text-orange-500 text-[24px] text-start mb-5 underline underline-offset-8 cursor-pointer">
+                        TIN TỨC
                     </div>
 
-                    {/* <div className="w-[60%] h-[100%] fixed">
-                        <a
-                            href="#"
-                            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-                        >
-                            <img
-                                class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                src="/docs/images/blog/image-4.jpg"
-                                alt=""
-                            />
-                            <div class="flex flex-col justify-between p-4 leading-normal">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    Noteworthy technology acquisitions 2021
-                                </h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                    Here are the biggest enterprise technology
-                                    acquisitions of 2021 so far, in reverse
-                                    chronological order.
-                                </p>
+                    <a
+                        href="https://vnexpress.net/sat-lo-duong-ho-chi-minh-4666095.html"
+                        className="flex justify-start"
+                    >
+                        <img
+                            src={
+                                'https://i1-vnexpress.vnecdn.net/2023/10/18/01-7904-1697597109.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=HZiYooV8bcPm-UWeSUWMIQ'
+                            }
+                            className="object-cover w-[100px] mr-[5%]"
+                        />
+                        <div className="text-start">
+                            <div className="text-[20px]">
+                                Sạt lở đường Hồ Chí Minh
                             </div>
-                        </a>
+                            <p className="text-[12px]">
+                                THỪA THIÊN - HUẾ: Hàng nghìn khối đất đá, cây
+                                cối tràn xuống đường Hồ Chí Minh nhánh Tây qua
+                                huyện A Lưới khiến giao thông ách tắc, sáng
+                                18/10.{' '}
+                            </p>
+                        </div>
+                    </a>
 
-                        <a
-                            href="#"
-                            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-                        >
-                            <img
-                                class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                src="/docs/images/blog/image-4.jpg"
-                                alt=""
-                            />
-                            <div class="flex flex-col justify-between p-4 leading-normal">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    Noteworthy technology acquisitions 2021
-                                </h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                    Here are the biggest enterprise technology
-                                    acquisitions of 2021 so far, in reverse
-                                    chronological order.
-                                </p>
-                            </div>
-                        </a>
+                    <hr className="mt-3 mb-3" />
 
-                        <a
-                            href="#"
-                            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-                        >
-                            <img
-                                class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
-                                src="/docs/images/blog/image-4.jpg"
-                                alt=""
-                            />
-                            <div class="flex flex-col justify-between p-4 leading-normal">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    Noteworthy technology acquisitions 2021
-                                </h5>
-                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                    Here are the biggest enterprise technology
-                                    acquisitions of 2021 so far, in reverse
-                                    chronological order.
-                                </p>
+                    <a
+                        href="https://vnexpress.net/sat-lo-deo-hai-van-4664518.html"
+                        className="flex justify-start"
+                    >
+                        <img
+                            src={
+                                'https://i1-vnexpress.vnecdn.net/2023/10/13/sat-lo2-1697192061-2777-1697192064.jpg?w=500&h=300&q=100&dpr=1&fit=crop&s=r90548Xf9_YL3t6KnHfGXQ'
+                            }
+                            className="object-cover w-[100px] mr-[5%]"
+                        />
+                        <div className="text-start">
+                            <div className="text-[20px]">
+                                Sạt lở đèo Hải Vân
                             </div>
-                        </a>
-                    </div> */}
+                            <p className="text-[12px]">
+                                ĐÀ NẴNG: Hàng trăm khối đất đá tràn xuống đường
+                                đèo Hải Vân khiến giao thông ách tắc, chính
+                                quyền phải chặn hai đầu đường, ngày 13/10.
+                            </p>
+                        </div>
+                    </a>
+
+                    <hr className="mt-3 mb-3" />
+
+                    <a
+                        href="https://vnexpress.net/sat-lo-deo-hai-van-4664518.html"
+                        className="flex justify-start"
+                    >
+                        <img
+                            src={
+                                'https://i1-vnexpress.vnecdn.net/2023/10/11/a1-1697029245-8724-1697029591.jpg?w=500&h=300&q=100&dpr=1&fit=crop&s=lCGosP3dMQ5jz4FswOhncQ'
+                            }
+                            className="object-cover w-[100px] mr-[5%]"
+                        />
+                        <div className="text-start">
+                            <div className="text-[20px]">
+                                Doanh nghiệp lo sạt lở ở khu công nghệ cao
+                                Đà Nẵng
+                            </div>
+                            <p className="text-[12px]">
+                                Doanh nghiệp FDI ở Đà Nẵng phản ánh tình trạng
+                                sạt lở đất sau mưa lớn làm hư hại nhà máy, gửi
+                                đơn kiến nghị nhưng chưa được phản hồi.
+                            </p>
+                        </div>
+                    </a>
+
+                    <hr className="mt-3 mb-3" />
                 </div>
 
-                <div className="mt-[3%] mb-[3%] w-[30%] flex-row justify-around">
+                <div className="mt-[3%] mb-[3%] w-[45%] flex-row justify-around h-[100%]">
                     <div className="text-orange-500 text-[24px] text-start mb-5 underline underline-offset-8 cursor-pointer">
                         VIDEO
                     </div>
 
                     <iframe
                         width="100%"
-                        height="100%"
+                        height="65%"
                         src="https://www.youtube.com/embed/OTVqFe3wUqM?si=7mTTCJDgq_zq4-qK&loop=1"
                         title="YouTube video player"
                         frameborder="0"
@@ -186,8 +107,6 @@ const News = () => {
                         allowfullscreen
                     ></iframe>
                 </div>
-
-                <div className="border w-[30%]"></div>
             </div>
         </div>
     );

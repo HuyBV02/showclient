@@ -6,7 +6,7 @@ import {
     InfoWindow,
 } from '@react-google-maps/api';
 
-const REACT_APP_GOOGLE_MAPS_KEY = 'AIzaSyBy3saqMDMi1oZsImziMLDiqKhm4Q_fCjg';
+const REACT_APP_GOOGLE_MAPS_KEY = 'AIzaSyDwY2qTxbLfDT7DuP7p0FZ0_54JWvmtBjw';
 
 const MapComponent = ({ selectedLocation }) => {
     const { isLoaded, loadError } = useLoadScript({
@@ -20,9 +20,13 @@ const MapComponent = ({ selectedLocation }) => {
     const [showInfo, setShowInfo] = React.useState(false);
     const [infoPosition, setInfoPosition] = React.useState(null);
 
-    const handleMarkerClick = (position) => {
+    // const handleMarkerClick = (position) => {
+    //     setShowInfo(true);
+    //     setInfoPosition(position);
+    // };
+    const handleMarkerClick = (index) => {
         setShowInfo(true);
-        setInfoPosition(position);
+        setInfoPosition(selectedLocation[index]);
     };
 
     if (loadError) return 'Error';
@@ -35,58 +39,33 @@ const MapComponent = ({ selectedLocation }) => {
                     height: '600px',
                 }}
                 center={selectedLocation[0]}
-                zoom={20}
-                // onLoad={onMapLoad}
-                mapOptions={{
-                    mapTypeId: 'satellite', // Đặt kiểu bản đồ mặc định thành vệ tinh
+                zoom={17}
+                onLoad={onMapLoad}
+                options={{
+                    mapTypeId: 'satellite', //
+                    
                 }}
             >
-                <Marker
-                    position={selectedLocation[0]}
-                    icon={
-                        'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
-                    }
-                    onClick={() => handleMarkerClick(selectedLocation[0])}
-                />
+                {selectedLocation.map((location, index) => (
+                    <Marker
+                        key={index}
+                        position={location}
+                        icon={
+                            'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+                        }
+                        onClick={() => handleMarkerClick(index)} // Pass the index to the function
+                    />
+                ))}
 
-                <Marker
-                    position={selectedLocation[1]}
-                    icon={
-                        'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
-                    }
-                    onClick={() => handleMarkerClick(selectedLocation[1])}
-                />
-                <Marker
-                    position={selectedLocation[2]}
-                    icon={
-                        'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
-                    }
-                    onClick={() => handleMarkerClick(selectedLocation[2])}
-                />
-
-                <Marker
-                    position={selectedLocation[3]}
-                    icon={
-                        'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
-                    }
-                    onClick={() => handleMarkerClick(selectedLocation[3])}
-                />
-                <Marker
-                    position={selectedLocation[4]}
-                    icon={
-                        'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
-                    }
-                    onClick={() => handleMarkerClick(selectedLocation[4])}
-                />
                 {showInfo && infoPosition && (
                     <InfoWindow
                         position={infoPosition}
                         onCloseClick={() => setShowInfo(false)}
                     >
                         <div>
-                            {/* Hiển thị dữ liệu của bạn ở đây */}
-                            <h5>Your Data</h5>
-                            <p>More information goes here</p>
+                            <strong className='text-red-500'>Cảm biến: {infoPosition.title}</strong>
+                            <p className='mt-2'>Dữ liệu: {infoPosition.description}</p>
+                            <p className='mt-2'>Thời gian: {infoPosition.time}</p>
                         </div>
                     </InfoWindow>
                 )}

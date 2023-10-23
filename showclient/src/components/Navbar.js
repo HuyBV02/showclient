@@ -6,24 +6,24 @@ const Navbar = () => {
     return (
         <>
             <div className="h-[12vh] flex items-center justify-between">
-                <div className="ml-[10%] ">
-                    <img src={logo} />
-                </div>
+                <Link to="/" className="ml-[10%] ">
+                    <img src={logo} className="object-contain h-[75px]" />
+                </Link>
 
                 <div className="mr-[10%] flex items-center">
-                    {/* <NavLink
-                    to="/"
-                    className={({ isActive }) =>
-                        isActive
-                            ? 'border px-2 py-2 bg-[#f58620] rounded-full'
-                            : 'text-black'
-                    }
-                >
-                    <span>TRANG CHỦ</span>
-                </NavLink>
-                <div className="border border-slate-900 h-[3vh] mr-2 ml-2"></div> */}
                     <NavLink
                         to="/"
+                        className={({ isActive }) =>
+                            isActive
+                                ? ' text-[#f58620] rounded-full'
+                                : 'text-black hover:text-[#f58620]'
+                        }
+                    >
+                        <span>TRANG CHỦ</span>
+                    </NavLink>
+                    <div className="border border-slate-900 h-[3vh] mr-2 ml-2"></div>
+                    <NavLink
+                        to="/information"
                         className={({ isActive }) =>
                             isActive
                                 ? ' text-[#f58620] rounded-full'
@@ -34,7 +34,7 @@ const Navbar = () => {
                     </NavLink>
                     <div className="border border-slate-900 h-[3vh] mr-2 ml-2"></div>
 
-                    <NavLink
+                    {/* <NavLink
                         to="/area"
                         className={({ isActive }) =>
                             isActive
@@ -44,7 +44,7 @@ const Navbar = () => {
                     >
                         <span>PHÂN VÙNG RỦI RO</span>
                     </NavLink>
-                    <div className="border border-slate-900 h-[3vh] mr-2 ml-2"></div>
+                    <div className="border border-slate-900 h-[3vh] mr-2 ml-2"></div> */}
                     <NavLink
                         to="/documents"
                         className={({ isActive }) =>
