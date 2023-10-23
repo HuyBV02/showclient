@@ -9,6 +9,7 @@ import Home from '../page/Home';
 import Infomation from '../page/Infomation';
 import Documents from '../page/Documents';
 import Contact from '../page/Contact';
+import Parter from '../components/Parter';
 
 const AppContain = ({ dataCr, dataLast }) => {
     return (
@@ -26,8 +27,12 @@ const AppContain = ({ dataCr, dataLast }) => {
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
             </div>
-           
-            <div className=''>
+
+            <div>
+                <Parter />
+            </div>
+
+            <div className="">
                 <Footer />
             </div>
         </div>

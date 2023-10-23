@@ -6,7 +6,7 @@ const ChartComponent = ({ dataCr }) => {
     return (
         <div>
             <div className='flex justify-between'>
-                <div className='border w-[45%]'>
+                <div className='border w-[30%]'>
                     <PiezoLineChart/>
                 </div>
                 <div className='border w-[65%]'>

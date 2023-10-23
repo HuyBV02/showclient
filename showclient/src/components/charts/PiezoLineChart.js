@@ -24,7 +24,7 @@ function PiezoLineChart() {
             curve: 'smooth',
         },
         title: {
-            text: 'Product Trends by Month',
+            text: 'PIEZO',
             align: 'left',
         },
         grid: {
