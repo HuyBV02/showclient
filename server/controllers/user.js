@@ -192,6 +192,7 @@ const getUsers = asyncHandler(async (req, res) => {
         users: response,
     });
 });
+
 const deleteUser = asyncHandler(async (req, res) => {
     const { _id } = req.query;
     if (!_id) throw new Error('Missing inputs');

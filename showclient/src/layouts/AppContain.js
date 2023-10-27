@@ -22,7 +22,7 @@ const AppContain = ({ dataCr, dataLast }) => {
                         path="/"
                         element={<Home dataCr={dataCr} dataLast={dataLast} />}
                     />
-                    <Route path="/infomation" element={<Infomation />} />
+                    <Route path="/information" element={<Infomation />} />
                     <Route path="/documents" element={<Documents />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>

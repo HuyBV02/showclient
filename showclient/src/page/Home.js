@@ -65,11 +65,11 @@ export default function Home({ dataCr, dataLast }) {
                         <Tab label="Biểu đồ" {...a11yProps(1)} />
                         <Tab label="Mặt cắt" {...a11yProps(2)} />
                         <Tab label="Giám sát bão - ATNĐ" {...a11yProps(3)} />
-                        <Tab label="Cảnh báo sạt lở" {...a11yProps(4)} />
+                        {/* <Tab label="Cảnh báo sạt lở" {...a11yProps(4)} /> */}
                     </Tabs>
                 </Box>
                 <CustomTabPanel value={value} index={0}>
-                    {/* <Map dataLast={dataLast} /> */}
+                    <Map dataLast={dataLast} />
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
                     <ChartComponent dataCr={dataCr} />
@@ -80,9 +80,9 @@ export default function Home({ dataCr, dataLast }) {
                 <CustomTabPanel value={value} index={3}>
                     <Strom />
                 </CustomTabPanel>
-                <CustomTabPanel value={value} index={4}>
+                {/* <CustomTabPanel value={value} index={4}>
                     <SatLo />
-                </CustomTabPanel>
+                </CustomTabPanel> */}
             </Box>
 
             <div className='w-[100%]'>

@@ -14,7 +14,6 @@ export default function Footer() {
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.608168439606!2d105.78753261128382!3d21.04835858052489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab2e25fa0bed%3A0xd77fc906815855d7!2zMjYgTmcuIDgyIFRy4bqnbiBDdW5nLCBOZ2jEqWEgVMOibiwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1698033700372!5m2!1svi!2s"
                         width="400"
                         height="250"
-                        // style="border:0;"
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
@@ -115,7 +114,6 @@ export default function Footer() {
                 </div>
                 <div className="w-[30%] flex flex-col justify-around">
                     <h2 className="text-[#333333] text-lg font-semibold mb-4 ">
-
                         hhh
                     </h2>
                     <div className="flex">
@@ -212,7 +210,7 @@ export default function Footer() {
             <div className="sm:flex sm:items-center sm:justify-between sm:flex-row">
                 <div className="flex space-x-4 max-sm:mt-4">
                     <a
-                        href="javascript:void(0)"
+                        href="https://www.facebook.com/Huydinh.vcpn/"
                         className="text-gray-400 hover:text-white text-base"
                     >
                         <svg
@@ -228,7 +226,7 @@ export default function Footer() {
                         </svg>
                     </a>
                     <a
-                        href="javascript:void(0)"
+                        href="https://zalo.me/0988.734.470"
                         className="text-gray-400 hover:text-white text-base w-5 h-5"
                     >
                         <svg
@@ -242,15 +240,7 @@ export default function Footer() {
                     </a>
                 </div>
                 <p className="text-gray-400 text-sm sm:order-1">
-                    © 2023
-                    <a
-                        // href="https://readymadeui.com/"
-                        target="_blank"
-                        className="hover:underline mx-1"
-                    >
-                        HH
-                    </a>
-                    All Rights
+                    © 2023 HH All Rights
                 </p>
             </div>
         </footer>

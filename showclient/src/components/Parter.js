@@ -13,16 +13,16 @@ const Parter = () => {
                 </div>
                 <div className="flex justify-around">
                     <a className="mr-10" href="https://www.geosense.co.uk/">
-                        <img src={image1} className="object-contain h-[75px]" />
+                        <img src={image1} className="object-contain h-[50px]" />
                     </a>
                     <a className="mr-10" href="https://www.campbellsci.com/">
-                        <img src={image2} className="object-contain h-[75px]" />
+                        <img src={image2} className="object-contain h-[50px]" />
                     </a>
                     <a className="mr-10" href="https://geo-science.com.vn/">
-                        <img src={image3} className="object-contain h-[75px]" />
+                        <img src={image3} className="object-contain h-[50px]" />
                     </a>
                     <a className="mr-10" href="http://igsvn.vn/">
-                        <img src={image4} className="object-contain h-[75px]" />
+                        <img src={image4} className="object-contain h-[55px]" />
                     </a>
                 </div>
             </div>

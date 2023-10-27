@@ -21,14 +21,23 @@ function App() {
     });
 
     useEffect(() => {
-        instance.get('datatest/cr').then((data) => setDataCr(data.data.data));
+        instance
+            .get('datatest/cr')
+            .then((data) => setDataCr(data.data.data))
+            .catch((err) => {
+                console.log(err);
+            });
     }, []);
 
     useEffect(() => {
         instance
             .get('datatest/last')
-            .then((data) => setDataLast(data.data.data));
+            .then((data) => setDataLast(data.data.data))
+            .catch((err) => {
+                console.log(err);
+            });
     }, []);
+
     return (
         <div className="App">
             <AppContain dataCr={dataCr} dataLast={dataLast} />
