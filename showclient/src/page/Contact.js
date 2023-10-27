@@ -6,7 +6,7 @@ const Contact = () => {
             <div className="w-[50%]">
                 <section className="bg-white text-start">
                     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                        <h2 className="mb-4 text-4xl text-[#f58620] tracking-tight font-extrabold text-start">
+                        <h2 className="text-[24px] text-[#f58620] tracking-tight font-extrabold text-start">
                             Liên hệ
                         </h2>
                         <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl"></p>
@@ -96,7 +96,7 @@ const Contact = () => {
             <div className="w-[45%] flex py-8 lg:py-16 px-4 mx-auto">
                 <div className="block">
                     <div className='mb-10 text-start'>
-                        <h2 className="text-[#f58620] text-4xl tracking-tight font-extrabold">
+                        <h2 className="text-[#f58620] text-[24px] tracking-tight font-extrabold">
                             Địa chỉ công ty
                         </h2>
                     </div>

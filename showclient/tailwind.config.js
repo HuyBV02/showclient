@@ -13,5 +13,11 @@ module.exports = {
         ],
       },
     },
+    extend: {
+      backgroundImage: {
+        'layout-d': "url('./src/assets/img/layoutDoc.jpg')",
+        'layout-n': "url('./src/assets/img/layoutNgang.jpg')",
+      }
+    },
     plugins: [],
 };

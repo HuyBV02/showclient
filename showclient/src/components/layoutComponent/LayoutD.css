@@ -1,0 +1,32 @@
+/* LayoutD.css */
+.image-container {
+    position: relative;
+  }
+  
+  .mark {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .point-1 {
+    left: 100px; /* Thay đổi vị trí theo tọa độ x */
+    top: 150px;  /* Thay đổi vị trí theo tọa độ y */
+  }
+  
+  .point-2 {
+    left: 200px;
+    top: 250px;
+  }
+  /* Tùy chỉnh các điểm đánh dấu và tooltip khác tương tự */
+  .marker-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }  
