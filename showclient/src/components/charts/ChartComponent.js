@@ -1,6 +1,6 @@
 import React from 'react';
-import LineChart from './LineChart';
-import PiezoLineChart from './PiezoLineChart';
+// import LineChart from './LineChart';
+// import PiezoLineChart from './PiezoLineChart';
 import PiezoChartColumn from './PiezoChartColumn';
 import CRLineChart from './CRLineChart';
 
