@@ -3,6 +3,7 @@ import React from 'react';
 // import PiezoLineChart from './PiezoLineChart';
 import PiezoChartColumn from './PiezoChartColumn';
 import CRLineChart from './CRLineChart';
+import VoltChart from './VoltChart';
 
 const ChartComponent = ({ dataCr }) => {
     return (
@@ -16,6 +17,11 @@ const ChartComponent = ({ dataCr }) => {
                     {/* <LineChart dataCr={dataCr} /> */}
 
                     <CRLineChart />
+                </div>
+            </div>
+            <div className="flex justify-between">
+                <div className="border w-[30%]">
+                    {/* <VoltChart /> */}
                 </div>
             </div>
         </div>
