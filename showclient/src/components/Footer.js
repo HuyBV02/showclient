@@ -1,6 +1,4 @@
 import React from 'react';
-import zalo from '../assets/img/zalo.jpg';
-import logo from '../assets/img/logoFooter.png';
 
 export default function Footer() {
     return (
@@ -208,7 +206,7 @@ export default function Footer() {
             </div>
             <hr className="my-8 border-gray-800" />
             <div className="h-[20px]">
-            {/* <div className="h-[20px] sm:flex sm:items-center sm:justify-between sm:flex-row"> */}
+                {/* <div className="h-[20px] sm:flex sm:items-center sm:justify-between sm:flex-row"> */}
                 {/* <div className="flex space-x-4 max-sm:mt-4">
                     <a
                         href="https://www.facebook.com/Huydinh.vcpn/"
@@ -240,9 +238,7 @@ export default function Footer() {
                         </svg>
                     </a>
                 </div> */}
-                <p className="text-gray-400 text-sm">
-                    © 2023 HH All Rights
-                </p>
+                <p className="text-gray-400 text-sm">© 2023 HH All Rights</p>
             </div>
         </footer>
     );

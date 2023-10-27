@@ -6,11 +6,11 @@ const Contact = () => {
             <div className="w-[50%]">
                 <section className="bg-white text-start">
                     <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                        <h2 className="text-[24px] text-[#f58620] tracking-tight font-extrabold text-start">
+                        <h2 className="mb-5 text-[24px] text-[#f58620] tracking-tight font-extrabold text-start">
                             Liên hệ
                         </h2>
-                        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl"></p>
-                        <form action="#" className="space-y-8">
+
+                        <form action="#" className="space-y-5">
                             <div>
                                 <label
                                     for="email"
@@ -21,7 +21,7 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
-                                    className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
+                                    className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2"
                                     placeholder="example@gmail.com"
                                     required
                                 />
@@ -95,15 +95,15 @@ const Contact = () => {
             </div>
             <div className="w-[45%] flex py-8 lg:py-16 px-4 mx-auto">
                 <div className="block">
-                    <div className='mb-10 text-start'>
+                    <div className="mb-10 text-start">
                         <h2 className="text-[#f58620] text-[24px] tracking-tight font-extrabold">
                             Địa chỉ công ty
                         </h2>
                     </div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.608168439606!2d105.78753261128382!3d21.04835858052489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab2e25fa0bed%3A0xd77fc906815855d7!2zMjYgTmcuIDgyIFRy4bqnbiBDdW5nLCBOZ2jEqWEgVMOibiwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1698033700372!5m2!1svi!2s"
-                        width="628"
-                        height="532"
+                        width="600"
+                        height="480"
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
