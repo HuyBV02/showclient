@@ -10,6 +10,7 @@ import SatLo from '../components/SatLo';
 import ChartComponent from '../components/charts/ChartComponent';
 import Layout from '../components/Layout';
 import News from '../components/news/News';
+import MapBoxComponent from '../components/mapBox/MapBoxComponent';
 
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -69,7 +70,8 @@ export default function Home({ dataCr, dataLast }) {
                     </Tabs>
                 </Box>
                 <CustomTabPanel value={value} index={0}>
-                    <Map dataLast={dataLast} />
+                    {/* <Map dataLast={dataLast} /> */}
+                    <MapBoxComponent />
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
                     <ChartComponent dataCr={dataCr} />
@@ -85,7 +87,7 @@ export default function Home({ dataCr, dataLast }) {
                 </CustomTabPanel> */}
             </Box>
 
-            <div className='w-[100%]'>
+            <div className="w-[100%]">
                 <News />
             </div>
         </>
