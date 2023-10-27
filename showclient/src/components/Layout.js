@@ -61,8 +61,8 @@ export default function Layout() {
                     onChange={handleChange}
                     aria-label="basic tabs example"
                 >
-                    <Tab label="Mặt cát dọc" {...a11yProps(0)} />
-                    <Tab label="Mặt cát ngang" {...a11yProps(1)} />
+                    <Tab label="Mặt cắt dọc" {...a11yProps(0)} />
+                    <Tab label="Mặt cắt ngang" {...a11yProps(1)} />
                 </Tabs>
             </Box>
 
